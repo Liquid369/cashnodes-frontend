@@ -18,12 +18,13 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
+      tests: false
+// Here you can pass flags/options to your application instance
       // when it is created
     },
 
     CashNodes: {
-      apiUrl: 'https://cashnodes-api.bitcoinunlimited.info'
+      apiUrl: 'http://149.28.34.27:4567/'
     }
   };
 
