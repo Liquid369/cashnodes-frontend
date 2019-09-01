@@ -22,12 +22,12 @@ export default Controller.extend(NodesDataMixin, {
     let pieData = {};
     Object.keys(byUserAgent).forEach((userAgent) => {
       let pieUserAgent = 'Others';
-      if (userAgent.match(/.*bu.*/i)) {
-        pieUserAgent = 'Bitcoin Unlimited';
-      } else if (userAgent.match(/.*xt.*/i)) {
-        pieUserAgent = 'XT';
-      } else if (userAgent.match(/.*abc.*/i)) {
-        pieUserAgent = 'ABC';
+      if (userAgent.match(/.*d*.*/i)) {
+        pieUserAgent = 'DogeCash Core';
+      } else if (userAgent.match(/.*d*.*/i)) {
+        pieUserAgent = 'DOGEC';
+      } else if (userAgent.match(/.*D*.*/i)) {
+        pieUserAgent = 'DogeCashCore';
       } else if (userAgent.match(/.*bchd.*/i)) {
         pieUserAgent = 'BCHD';
       }
